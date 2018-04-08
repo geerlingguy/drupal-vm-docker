@@ -1,5 +1,5 @@
 {
-    "name": "geerlingguy/drupal-vm-docker-plugin",
+    "name": "geerlingguy/drupal-vm-docker",
     "description": "A quick and easy Docker-based Drupal project development environment.",
     "license": "MIT",
     "type": "composer-plugin",
