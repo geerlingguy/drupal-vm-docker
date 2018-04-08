@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains geerlingguy\DrupalVmDocker\Composer\CommandProvider.
+ */
+
 namespace geerlingguy\DrupalVmDocker\Composer;
 
 use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;

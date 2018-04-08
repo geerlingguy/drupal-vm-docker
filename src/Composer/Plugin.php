@@ -11,12 +11,13 @@ use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\Factory;
 use Composer\IO\IOInterface;
+use Composer\Plugin\Capable;
 use Composer\Plugin\PluginInterface;
 use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
 use geerlingguy\Command\CommandProvider;
 
-class Plugin implements PluginInterface, EventSubscriberInterface {
+class Plugin implements PluginInterface, Capable, EventSubscriberInterface {
     /**
      * {@inheritdoc}
      */
@@ -45,7 +46,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
     }
 
     /**
-     * Add/update project Docker Compose file.
+     * Add or update project Docker Compose file.
      *
      * @param \Composer\Script\Event $event
      */
