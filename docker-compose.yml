@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  drupalvm:
+    image: geerlingguy/drupal-vm
+    container_name: drupal_vm_docker
+    ports:
+      - 80:80
+      - 443:443
+    privileged: true
+    volumes:
+      - ./:/var/www/drupalvm/drupal/web/:rw,delegated
+      - /var/lib/mysql
+    command: /lib/systemd/systemd

@@ -1,0 +1,25 @@
+{
+    "name": "geerlingguy/drupal-vm-docker-plugin",
+    "description": "A quick and easy Docker-based Drupal project development environment.",
+    "license": "MIT",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "Jeff Geerling",
+            "homepage": "https://www.jeffgeerling.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/geerlingguy/drupal-vm-docker/issues",
+        "source": "https://github.com/geerlingguy/drupal-vm-docker"
+    },
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {"geerlingguy\\Composer\\": "src"}
+    },
+    "extra": {
+        "class": "geerlingguy\\Composer\\DrupalVmDocker"
+    }
+}
