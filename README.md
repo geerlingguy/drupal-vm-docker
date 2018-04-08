@@ -8,7 +8,9 @@ Get started:
 
 Run this command inside the directory of a Drupal project that is built using Composer, and it will create a Docker Compose file which will run a local instance of Drupal VM.
 
-Make sure you have [Docker CE](https://store.docker.com/search?type=edition&offering=community) installed, then run `docker-compose up -d`. After a minute or two, you should be able to access your Drupal site at `http://localhost/`.
+Make sure you have [Docker CE](https://store.docker.com/search?type=edition&offering=community) installed and running, then run `docker-compose up -d`. After a minute or two, you should be able to access your Drupal site at `http://localhost/`.
+
+> To install Drupal, the default Drupal VM database name, username, and password are all `drupal`.
 
 ## Shutting down the environment
 

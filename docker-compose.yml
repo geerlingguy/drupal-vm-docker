@@ -10,6 +10,6 @@ services:
       - 443:443
     privileged: true
     volumes:
-      - ./:/var/www/drupalvm/drupal/web/:rw,delegated
+      - ./:/var/www/drupalvm/drupal/:rw,delegated
       - /var/lib/mysql
     command: /lib/systemd/systemd
