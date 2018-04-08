@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains geerlingguy\Composer|DrupalVmDocker.
+ * Contains geerlingguy\DrupalVmDocker\Composer\Plugin.
  */
 
-namespace geerlingguy\Composer;
+namespace geerlingguy\DrupalVmDocker\Composer;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -14,15 +14,24 @@ use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
+use geerlingguy\Command\CommandProvider;
 
-
-class DrupalVmDocker implements PluginInterface, EventSubscriberInterface {
+class Plugin implements PluginInterface, EventSubscriberInterface {
     /**
      * {@inheritdoc}
      */
     public function activate(Composer $composer, IOInterface $io) {
         $this->composer = $composer;
         $this->io = $io;
+    }
+
+    /**
+     * @return array
+     */
+    public function getCapabilities() {
+        return array(
+            'Composer\Plugin\Capability\CommandProvider' => 'geerlingguy\DrupalVmDocker\Composer\CommandProvider',
+        );
     }
 
     /**

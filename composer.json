@@ -18,10 +18,11 @@
     },
     "autoload": {
         "psr-4": {
-            "geerlingguy\\Composer\\": "src"
+            "geerlingguy\\DrupalVmDocker\\": "src",
+            "geerlingguy\\DrupalVmDocker\\Composer\\": "src/Composer"
         }
     },
     "extra": {
-        "class": "geerlingguy\\Composer\\DrupalVmDocker"
+        "class": "geerlingguy\\DrupalVmDocker\\Composer\\Plugin",
     }
 }

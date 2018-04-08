@@ -10,6 +10,28 @@ Run this command inside the directory of a Drupal project that is built using Co
 
 Make sure you have [Docker CE](https://store.docker.com/search?type=edition&offering=community) installed, then run `docker-compose up -d`. After a minute or two, you should be able to access your Drupal site at `http://localhost/`.
 
+## Shutting down the environment
+
+When you're finished developing, run the command:
+
+    docker-compose stop
+
+And once you're ready to develop again, run:
+
+    docker-compose start
+
+If you want to completely clear out the local environment (e.g. to start over or if you're finished with a project), run:
+
+    docker-compose down
+
+## Updating the Docker Compose file
+
+The Docker Compose file should be updated automatically any time you update to a newer version of this plugin. However, you can also manually force the file to be updated by running:
+
+    composer drupal-vm-docker-compose-update
+
+You should then tell Docker to restart anything that needs to be restarted with `docker-compose up -d`.
+
 ## License
 
 This project is licensed under the MIT open source license.
