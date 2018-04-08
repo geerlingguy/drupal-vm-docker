@@ -8,9 +8,13 @@
 namespace geerlingguy\Composer;
 
 use Composer\Composer;
+use Composer\EventDispatcher\EventSubscriberInterface;
+use Composer\Factory;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
-use Composer\EventDispatcher\EventSubscriberInterface;
+use Composer\Script\Event;
+use Composer\Script\ScriptEvents;
+
 
 class DrupalVmDocker implements PluginInterface, EventSubscriberInterface {
     /**

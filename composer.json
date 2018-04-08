@@ -17,7 +17,9 @@
         "composer-plugin-api": "^1.1"
     },
     "autoload": {
-        "psr-4": {"geerlingguy\\Composer\\": "src"}
+        "psr-4": {
+            "geerlingguy\\Composer\\": "src"
+        }
     },
     "extra": {
         "class": "geerlingguy\\Composer\\DrupalVmDocker"
