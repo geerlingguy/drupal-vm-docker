@@ -30,7 +30,7 @@ If you want to completely clear out the local environment (e.g. to start over or
 
 The Docker Compose file should be updated automatically any time you update to a newer version of this plugin. However, you can also manually force the file to be updated by running:
 
-    composer drupal-vm-docker-compose-update
+    composer drupal-vm-docker-update
 
 You should then tell Docker to restart anything that needs to be restarted with `docker-compose up -d`.
 

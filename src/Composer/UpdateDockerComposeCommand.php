@@ -14,7 +14,7 @@ use Composer\Factory;
 
 class UpdateDockerComposeCommand extends BaseCommand {
     protected function configure() {
-        $this->setName('drupal-vm-docker-compose-update');
+        $this->setName('drupal-vm-docker-update');
         $this->setDescription('Update the docker-compose.yml file for your Drupal project.');
     }
 
