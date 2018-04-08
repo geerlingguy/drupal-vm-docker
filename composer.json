@@ -23,6 +23,6 @@
         }
     },
     "extra": {
-        "class": "geerlingguy\\DrupalVmDocker\\Composer\\Plugin",
+        "class": "geerlingguy\\DrupalVmDocker\\Composer\\Plugin"
     }
 }
