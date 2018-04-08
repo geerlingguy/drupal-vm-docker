@@ -16,4 +16,4 @@ This project is licensed under the MIT open source license.
 
 ## About the Author
 
-[Jeff Geerling](https://www.jeffgeerling.com/) created Drupal VM in 2014 for a more efficient Drupal site and core/contrib development workflow. This project is featured as an example in [Ansible for DevOps](https://www.ansiblefordevops.com/).
+[Jeff Geerling](https://www.jeffgeerling.com/) created the Drupal VM Docker Composer Plugin in 2018 for a more efficient Drupal site and core/contrib development workflow.
