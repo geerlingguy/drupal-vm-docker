@@ -1,5 +1,7 @@
 # Drupal VM Docker Composer Plugin
 
+[![Packagist](https://img.shields.io/packagist/v/geerlingguy/drupal-vm-docker.svg)](https://packagist.org/packages/geerlingguy/drupal-vm-docker) [![Docker Automated build](https://img.shields.io/docker/automated/geerlingguy/drupal-vm.svg?maxAge=2592000)](https://hub.docker.com/r/geerlingguy/drupal-vm/) [![](https://images.microbadger.com/badges/image/geerlingguy/drupal-vm.svg)](https://microbadger.com/images/geerlingguy/drupal-vm "Get your own image badge on microbadger.com") [![irc://irc.freenode.net/drupal-vm](https://img.shields.io/badge/irc.freenode.net-%23drupal--vm-brightgreen.svg)](https://riot.im/app/#/room/#drupal-vm:matrix.org)
+
 **The quickest way to add a local development environment to your Drupal project!**
 
 Get started:
