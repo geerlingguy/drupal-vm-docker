@@ -12,4 +12,5 @@ services:
     volumes:
       - ./:/var/www/drupalvm/drupal/:rw,delegated
       - /var/lib/mysql
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
     command: /lib/systemd/systemd
